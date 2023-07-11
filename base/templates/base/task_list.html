@@ -1,10 +1,12 @@
 <h1>Botafogo de futebol e regatas</h1>
-
+<a href="{% url 'task-create' %}">Create task</a>
 <table>
     <tr>
         <th>
             Items
         </th>
+        <th></th>
+        <th></th>
     </tr>
 
     {% for task in tasks %}
@@ -14,6 +16,9 @@
         </td>
         <td>
             <a href="{% url 'task' task.id %}">View</a>
+        </td>
+        <td>
+            <a href="{% url 'task-update' task.id %}">Edit</a>
         </td>
     </tr>
 
