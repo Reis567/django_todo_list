@@ -1,0 +1,21 @@
+<h1>Botafogo de futebol e regatas</h1>
+
+<table>
+    <tr>
+        <th>
+            Items
+        </th>
+    </tr>
+
+    {% for task in tasks %}
+    <tr>
+        <td>
+            {{task.title}}
+        </td>
+    </tr>
+
+    {% empty %}
+    <p>Empty</p>
+
+    {% endfor %}
+</table>
