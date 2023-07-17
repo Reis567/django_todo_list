@@ -32,6 +32,9 @@ a,p {
     margin: 0;
 }
 
+.margin-top-20{
+    margin-top: 20px;
+}
 
 .container{
     max-width: 550px;
@@ -63,7 +66,7 @@ a,p {
     justify-content: space-between;
     padding: 20px;
     background-color: #fff;
-    border-top: 1px soliod #faFAFA;
+    border-top: 1px solid #faFAFA;
 }
 
 .task-title{
@@ -149,3 +152,16 @@ label{
     transition: .5s;
     color: #faFAFA;
 }
+
+.card-body{
+    padding: 12px;
+}
+.button {
+    width: 100%;
+  }
+
+.card-body form{
+    width: 100%;
+  }
+
+

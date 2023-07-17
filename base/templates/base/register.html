@@ -2,14 +2,30 @@
 
 {% block content %}
 
-<h1>Register</h1>
+<div class="header-bar">
+    <h1>Register</h1>
 
-<form action="" method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <input type="submit" value="Register">
-</form>
+</div>
 
-<p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+<div class="card-body">
+
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        <label for="">{{form.username.label}}</label>
+        {{form.username}}
+
+        <label for="">{{form.password1.label}}</label>
+        {{form.password1}}
+
+        <label for="">{{form.password2.label}}</label>
+        {{form.password2}}
+
+        <input class="button margin-top-20" type="submit" value="Register">
+    </form>
+    
+    <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+</div>
+
 
 {% endblock content %}

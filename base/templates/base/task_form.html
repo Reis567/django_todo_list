@@ -3,12 +3,20 @@
 {% block content %}
 
 
-<h3>Task form</h3>
-<a href="{% url 'tasks' %}">Go back</a>
-<form action="" method="POST">
-    {{form.as_p}}
-    {% csrf_token %}
-    <input type="submit" value="Submit">
-</form>
+<div class="header-bar">
+    <a href="{% url 'tasks' %}">&#8592; Voltar</a>
+
+</div>
+
+
+<div class="card-body">
+    
+    <form action="" method="POST">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input class="button" type="submit" value="Submit">
+    </form>
+</div>
+
 
 {% endblock content %}
