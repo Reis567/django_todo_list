@@ -32,7 +32,7 @@ cd todo_list
  source env/bin/activate
 
 -  On Windows:
-  env\Scripts\activate
+  venv\Scripts\activate
 
 
 5. Install the dependencies:
@@ -120,7 +120,7 @@ source env/bin/activate
 - No Windows:
 
 ```
-env\Scripts\activate
+venv\Scripts\activate
 ```
 
 5. Instale as dependências:
